@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "ver-id-common-types-apple",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AppliedRecognition/Ver-ID-Common-Types-Apple.git",
+      "state" : {
+        "revision" : "5d4179328e4203780098a812e9b3e06b4b054b9c",
+        "version" : "2.1.0"
+      }
+    }
+  ],
+  "version" : 2
+}
