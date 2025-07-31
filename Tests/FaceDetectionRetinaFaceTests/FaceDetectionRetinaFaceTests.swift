@@ -50,7 +50,7 @@ final class FaceDetectionRetinaFaceTests: XCTestCase {
             return
         }
         let modelPrep = Preprocessing()
-        let targetSize = CGSize(width: 640, height: 640)
+        let targetSize = CGSize(width: 320, height: 320)
         let (scaled, scale) = try modelPrep.scalePixelBuffer(image.videoBuffer, to: targetSize)
         let ciImage = CIImage(cvPixelBuffer: scaled)
         XCTAssertEqual(ciImage.extent.width, targetSize.width)

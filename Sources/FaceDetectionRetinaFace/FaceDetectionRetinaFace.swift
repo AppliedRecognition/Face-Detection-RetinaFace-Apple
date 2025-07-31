@@ -11,7 +11,7 @@ import UIKit
 /// Face detection implementation using RetinaFace model
 public final class FaceDetectionRetinaFace: FaceDetection {
     private let model: MLModel
-    private let inputSize = CGSize(width: 640, height: 640)
+    private let inputSize = CGSize(width: 320, height: 320)
     private let modelInputPrep = Preprocessing()
     private let postProcessing = Postprocessing()
     
