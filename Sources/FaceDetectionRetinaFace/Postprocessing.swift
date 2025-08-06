@@ -128,7 +128,7 @@ struct Postprocessing {
         let pitchRatio = verticalNoseOffset / verticalFaceLength
         let pitch = (0.5 - pitchRatio) * 90  // Neutral face at pitch ≈ 0
         
-        return EulerAngle(yaw: yaw.asFloat, pitch: pitch.asFloat, roll: roll.asFloat)
+        return EulerAngle(yaw: yaw.asFloat, pitch: 0-pitch.asFloat, roll: roll.asFloat)
     }
     
     private func extractValuesFromMLMultiArray(_ array: MLMultiArray) -> [Float] {
